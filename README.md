@@ -1,6 +1,5 @@
 # Mistplay Data Engineer Take Home Challenge
 
-
 ## Task Description
 
 You will be required to produce code to process and transform some sample data.
@@ -8,6 +7,7 @@ The sample data is in the file called `data.json`.
 There are also some duplicate rows.
 
 The produced code should be able to acheive the following
+
 1. remove duplicates over the columns `id` and `created_at` (considered simultaneously)
 2. compute the rank of each user's `user_score` within each age group and output the rank in a new column called `sub_group_rank`
 3. process the column `widget_list` by
@@ -27,7 +27,15 @@ Your code will be evaluated for correctness, scalability and maintainability.
 1. You are allowed to use any language and any libraries you wish.
 However, you should be able to justify your technical decisions.
 Feel free to use any resources available to you.
-2. Fork the github repo [ here ](https://github.com/Mistplay/DataEngineerTakeHomeChallenge). Once you've completed the challenge, push all code and other files to Github. Submit the link to your Github repo.
+2. Fork the github repo [here](https://github.com/Mistplay/DataEngineerTakeHomeChallenge). Once you've completed the challenge, push all code and other files to Github. Submit the link to your Github repo.
 3. The challenge should not require more than a couple of hours to complete.
 We don't want you to be spending too much time on it.
 This being said, your code should be organized and well-designed within reason.
+
+## Solution
+
+```sh
+python3.9 -m venv venv && source venv/bin/activate
+pip install notebook
+jupyter notebook
+```
